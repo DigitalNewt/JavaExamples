@@ -62,14 +62,21 @@ public class Animal {
      }
      */
 
-    // Animal pushes off the responsibility for flying to flyingType
+    /**
+     * Animal pushes off the responsibility for flying to flyingType
+     * @return string from flyingType.fly()
+     */
     public String tryToFly(){
 
         return flyingType.fly();
     }
 
-    // If you want to be able to change the flyingType dynamically
-    // add the following method
+
+    /**
+     * If you want to be able to change the flyingType dynamically
+     * add the following method
+     * @param newFlyType
+     */
     public void setFlyingAbility(Flys newFlyType){
 
         flyingType = newFlyType;

@@ -5,7 +5,9 @@
  */
 public class Bird extends Animal{
 
-    // The constructor initializes all objects
+    /**
+     * Bird constructor
+     */
     public Bird(){
         super();
         setSound("Tweet");

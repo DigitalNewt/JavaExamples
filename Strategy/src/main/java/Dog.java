@@ -5,10 +5,16 @@
  */
 public class Dog extends Animal{
 
+    /**
+     * digHole method prints message
+     */
     public void digHole(){
         System.out.println("Dug a hole");
     }
 
+    /**
+     * Dog constructor
+     */
     public Dog(){
         super();
         setSound("Bark");
