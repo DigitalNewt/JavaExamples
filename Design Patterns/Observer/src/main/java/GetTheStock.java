@@ -10,36 +10,45 @@ public class GetTheStock implements Runnable {
     // Could be used to set how many seconds to wait
     // in Thread.sleep() below
 
-    // private int startTime;
+    private int startTime;
     private String stock;
     private double price;
 
     // Will hold reference to the StockGrabber object
     private Subject stockGrabber;
 
+    /**
+     * Constructor to sets the stock name price and number of seconds to wait for display
+     * @param stockGrabber stock grabber object
+     * @param newStartTime number of seconds to wait until displayed
+     * @param newStock stock name
+     * @param newPrice stock price
+     */
     public GetTheStock(Subject stockGrabber, int newStartTime, String newStock, double newPrice){
 
         // Store the reference to the stockGrabber object so
         // I can make calls to its methods
         this.stockGrabber = stockGrabber;
 
-        // startTime = newStartTime;  Not used to have variable sleep time
+        startTime = newStartTime;  //Not used to have variable sleep time
         stock = newStock;
         price = newPrice;
 
     }
 
+    /**
+     * Wait based on the number of startTime seconds.
+     */
+    public void startTimeWait(){
+        try {
+            Thread.sleep(startTime * 1000);
+        } catch(InterruptedException ie) {
+        }
+    }
+
     public void run(){
         for(int i = 1; i <= 20; i++){
-            try{
-
-                // Sleep for 2 seconds
-                Thread.sleep(2000);
-                // Use Thread.sleep(startTime * 1000); to
-                // make sleep time variable
-            }
-            catch(InterruptedException e)
-            {}
+            startTimeWait();
 
             // Generates a random number between -.03 and .03
             double randNum = (Math.random() * (.06)) - .03;

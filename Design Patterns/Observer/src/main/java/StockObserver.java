@@ -2,6 +2,7 @@
  * User: Brent Baker
  * Date: 10/15/13
  * Time: 9:24 AM
+ * StockObserver class that implements Observer
  */
 public class StockObserver implements Observer {
 
@@ -18,6 +19,11 @@ public class StockObserver implements Observer {
     // Will hold reference to the StockGrabber object
     private Subject stockGrabber;
 
+    /**
+     * Constructor adds the observer to the Subjects ArrayList
+     * I can make calls to its methods
+     * @param stockGrabber Subject object to add
+     */
     public StockObserver(Subject stockGrabber){
 
         // Store the reference to the stockGrabber object so
@@ -30,13 +36,13 @@ public class StockObserver implements Observer {
         // Message notifies user of new observer
         System.out.println("New Observer " + this.observerID);
 
-        // Add the observer to the Subjects ArrayList
         stockGrabber.register(this);
 
     }
 
-    // Called to update all observers
-    @Override
+    /**
+     * Called to update all observers
+     */
     public void update(double ibmPrice, double aaplPrice, double googPrice) {
         this.ibmPrice = ibmPrice;
         this.aaplPrice = aaplPrice;
@@ -45,6 +51,9 @@ public class StockObserver implements Observer {
         printThePrices();
     }
 
+    /**
+     * Display the stock prices
+     */
     public void printThePrices(){
         System.out.println(observerID + "\nIBM: " + ibmPrice + "\nAAPL: " +
                 aaplPrice + "\nGOOG: " + googPrice + "\n");
