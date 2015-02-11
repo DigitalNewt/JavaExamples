@@ -5,8 +5,12 @@
  */
 public class EnemyShipFactory {
 
-    // This could be used as a static method if we
-    // are willing to give up subclassing it
+    /**
+     * This could be used as a static method if we
+     * are willing to give up sub classing it
+     * @param newShipType Ship Type
+     * @return Enemy Ship Object or Null
+     */
     public EnemyShip makeEnemyShip(String newShipType){
         EnemyShip newShip = null;
 

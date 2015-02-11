@@ -5,6 +5,9 @@
  */
 public class UFOEnemyShip extends EnemyShip {
 
+    /**
+     * Setup UFO Enemy Ship Object
+     */
     public UFOEnemyShip(){
         setName("UFO Enemy Ship");
         setDamage(20.0);

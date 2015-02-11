@@ -59,7 +59,10 @@ public class EnemyShipTesting {
           */
     }
 
-    // Executes methods of the super class
+    /**
+     * Executes methods of the super class
+     * @param anEnemyShip Enemy Ship Object
+     */
     public static void doStuffEnemy(EnemyShip anEnemyShip){
         anEnemyShip.displayEnemyShip();
         anEnemyShip.followHeroShip();
