@@ -18,7 +18,7 @@ public class TestFactoryPattern {
 
     @Before
     public void setUpStreams() {
-        System.setOut(new PrintStream(outContent));
+            System.setOut(new PrintStream(outContent));
     }
 
     @After
@@ -104,5 +104,8 @@ public class TestFactoryPattern {
         newShip = shipFactory.makeEnemyShip("B");
         assertEquals("Big UFO Enemy Ship", newShip.getName());
         assertEquals(40.0, newShip.getDamage(), 0);
+
+        newShip = shipFactory.makeEnemyShip("Z");
+        assertNull(newShip);
     }
 }

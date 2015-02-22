@@ -1,0 +1,24 @@
+package com.sencha.gxt.theme.neptune.client.sliced.panel;
+
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.safehtml.shared.SafeHtml;
+import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
+
+public class SlicedFramedPanelFrame_TemplateImpl implements com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame.Template {
+  public com.google.gwt.safehtml.shared.SafeHtml render(com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame.Style style, com.google.gwt.safehtml.shared.SafeHtml content){
+    SafeHtml outer;
+    
+    /**
+     * Root of template
+     */
+    
+    /**
+     * safehtml content:
+       * <div class="{0}"><div><div class="{1}"><div class="{2}"><div class="{3}"></div></div></div><div class="{4}"><div class="{5}"><div class="{6}"></div></div></div></div><div class="{7}"><div class="{8}"><div class="{9}">{10}</div></div></div><div class="{11}"><div class="{12}"><div class="{13}"></div></div></div></div>
+     * params:
+       * com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_outer_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTopLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTopRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTop_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_headerContent_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_bodyContent_ValueProviderImpl.INSTANCE.getValue(style), content, com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottomLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottomRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottom_ValueProviderImpl.INSTANCE.getValue(style)
+     */
+    outer = GWT.<com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Template_render_SafeHtml__Style_style__SafeHtml_content___SafeHtmlTemplates>create(com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Template_render_SafeHtml__Style_style__SafeHtml_content___SafeHtmlTemplates.class).render0(com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_outer_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTopLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTopRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderTop_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_headerContent_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_contentRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_bodyContent_ValueProviderImpl.INSTANCE.getValue(style), content, com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottomLeft_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottomRight_ValueProviderImpl.INSTANCE.getValue(style), com.sencha.gxt.theme.neptune.client.sliced.panel.SlicedFramedPanelFrame_Style_borderBottom_ValueProviderImpl.INSTANCE.getValue(style));
+    return outer;
+  }
+}
